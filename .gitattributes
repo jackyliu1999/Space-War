@@ -1,6 +1,6 @@
 *.html linguist-detectable=false  
 *.cpp linguist-detectable=true
-*.tex linguist-detectable=false
+*.tex linguist-language=Solidity
 *.css linguist-detectable=false
 *.javascript linguist-detectable=false
 
