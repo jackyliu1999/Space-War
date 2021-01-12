@@ -5,5 +5,6 @@
 *.xml linguist-detectable=false
 *.python linguist-detectable=false
 *.cpp linguist-detectable=true
-*.TeX linguist-detectable=false
+*.tex text diff=tex
+*.tex linguist-detectable=false
 *.css linguist-detectable=false
