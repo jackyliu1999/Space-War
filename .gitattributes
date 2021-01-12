@@ -3,5 +3,7 @@
 *.js linguist-detectable=false  
 *.html linguist-detectable=false  
 *.xml linguist-detectable=false
-*.python linguist-detectable=true
+*.python linguist-detectable=false
 *.cpp linguist-detectable=true
+*.tex linguist-detectable=false
+*.css linguist-detectable=false
