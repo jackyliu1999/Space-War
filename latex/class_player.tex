@@ -1,0 +1,310 @@
+\hypertarget{class_player}{}\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+this file contains \mbox{\hyperlink{class_player}{Player}} class which defines functionalities and status of the player ~\newline
+  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_a96a4b86bc476c7872bce234f7dd958ba}{Player}} (sf\+::\+Render\+Window $\ast$window)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_player}{Player}} class Gets the player\textquotesingle{}s stats, then loads the player.\+png file and turns it into a sprite. then move the sprite. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{$\sim$\+Player}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_player}{Player}} destructor Default destructor for the \mbox{\hyperlink{class_player}{Player}}. \end{DoxyCompactList}\item 
+const sf\+::\+Vector2f \& \mbox{\hyperlink{class_player_a49300f6f7d1083b3fddca1c270cce16b}{get\+Pos}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_player}{Player}} Posititon Method that gets position of player. \end{DoxyCompactList}\item 
+const sf\+::\+Float\+Rect \mbox{\hyperlink{class_player_af5d0374a640b6ca1f56ba568f7568a0b}{get\+Bounds}} () const
+\begin{DoxyCompactList}\small\item\em Boundary of sprite Method that gets global boundaries of the sprite. \end{DoxyCompactList}\item 
+const int \& \mbox{\hyperlink{class_player_acd898fcd671c4beb64ca68df59695a28}{get\+Hp}} () const
+\begin{DoxyCompactList}\small\item\em Get Hp Method that gets the player\textquotesingle{}s hp. \end{DoxyCompactList}\item 
+const int \& \mbox{\hyperlink{class_player_a1687b635299e4274adaabe38fa613316}{get\+Hp\+Max}} () const
+\begin{DoxyCompactList}\small\item\em Get Max HP Method that gets the max hp of the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a8c957df2a6d645ebcc75fef1e0e3504a}{set\+Position}} (const sf\+::\+Vector2f pos)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{class_player}{Player}} Posititon Method that sets player position using vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a052d1f93ee6846291bed316d16e4ad84}{set\+Position}} (const float x, const float y)
+\begin{DoxyCompactList}\small\item\em Set player Position Method that sets player position using x y values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_aeac5ced0bb7ddf8c36f93ce357161119}{set\+Hp}} (const int hp)
+\begin{DoxyCompactList}\small\item\em Set Hp Method that sets the player HP. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_acd9c2d46a734fee65d534307f3e0bd80}{lose\+Hp}} (const int value)
+\begin{DoxyCompactList}\small\item\em Lose HP Method that handles the player losing hp. If damaged player loses hp and if hp goes into the negatives just set it to 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a94d4473f66712f82a5eda899429b49bc}{move}} (const float dirX, const float dirY)
+\begin{DoxyCompactList}\small\item\em Sprtie Movement Method that moves the player sprite. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_player_a3b6e1065602866237b7ddb1be34b7033}{can\+Attack}} ()
+\begin{DoxyCompactList}\small\item\em Can \mbox{\hyperlink{class_player}{Player}} Attack Checks if the player can attack by checking attack Cooldown. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_aeb5a083f19a16e8fb89b7c869db0f72c}{update\+Attack}} ()
+\begin{DoxyCompactList}\small\item\em Update Attack Info If the player attacks, update the attack cool down. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}{update}} ()
+\begin{DoxyCompactList}\small\item\em Update methods Calls the update attack method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a6cab90197882405bbf7db4454a58bbc9}{center}} ()
+\begin{DoxyCompactList}\small\item\em Set player in Center Sets player position to bottom center of the map. Gets local bounds then set its position to bottom center of map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a04d2bfed2fa42488eea9ff0cd9818b2a}{render}} (sf\+::\+Render\+Target \&target)
+\begin{DoxyCompactList}\small\item\em Render player Renders the player Sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this file contains \mbox{\hyperlink{class_player}{Player}} class which defines functionalities and status of the player ~\newline
+ 
+
+\mbox{\hyperlink{class_player}{Player}} class
+
+this class includes functions that define the position and boundary of the weapon and also update the position of the weapon 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_a96a4b86bc476c7872bce234f7dd958ba}\label{class_player_a96a4b86bc476c7872bce234f7dd958ba}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_player}{Player}} class Gets the player\textquotesingle{}s stats, then loads the player.\+png file and turns it into a sprite. then move the sprite. 
+
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em window} & -\/ window of the game\\
+\hline
+{\em the} & game window. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a749d2c00e1fe0f5c2746f7505a58c062}\label{class_player_a749d2c00e1fe0f5c2746f7505a58c062}} 
+\index{Player@{Player}!````~Player@{$\sim$Player}}
+\index{````~Player@{$\sim$Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{$\sim$Player()}{~Player()}}
+{\footnotesize\ttfamily Player\+::$\sim$\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_player}{Player}} destructor Default destructor for the \mbox{\hyperlink{class_player}{Player}}. 
+
+deconstructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_a3b6e1065602866237b7ddb1be34b7033}\label{class_player_a3b6e1065602866237b7ddb1be34b7033}} 
+\index{Player@{Player}!canAttack@{canAttack}}
+\index{canAttack@{canAttack}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{canAttack()}{canAttack()}}
+{\footnotesize\ttfamily const bool Player\+::can\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Can \mbox{\hyperlink{class_player}{Player}} Attack Checks if the player can attack by checking attack Cooldown. 
+
+get whether the character can attack \begin{DoxyReturn}{Returns}
+True\+: if character can attack; False\+: if character cannot attack
+
+True if can attack otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a6cab90197882405bbf7db4454a58bbc9}\label{class_player_a6cab90197882405bbf7db4454a58bbc9}} 
+\index{Player@{Player}!center@{center}}
+\index{center@{center}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{center()}{center()}}
+{\footnotesize\ttfamily void Player\+::center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set player in Center Sets player position to bottom center of the map. Gets local bounds then set its position to bottom center of map. 
+
+set position of the character to the center of the map ~\newline
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & game window. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_af5d0374a640b6ca1f56ba568f7568a0b}\label{class_player_af5d0374a640b6ca1f56ba568f7568a0b}} 
+\index{Player@{Player}!getBounds@{getBounds}}
+\index{getBounds@{getBounds}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getBounds()}{getBounds()}}
+{\footnotesize\ttfamily const sf\+::\+Float\+Rect Player\+::get\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Boundary of sprite Method that gets global boundaries of the sprite. 
+
+get limitation of where the character can move on the map \begin{DoxyReturn}{Returns}
+the boundary of the character on the map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_acd898fcd671c4beb64ca68df59695a28}\label{class_player_acd898fcd671c4beb64ca68df59695a28}} 
+\index{Player@{Player}!getHp@{getHp}}
+\index{getHp@{getHp}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHp()}{getHp()}}
+{\footnotesize\ttfamily const int \& Player\+::get\+Hp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get Hp Method that gets the player\textquotesingle{}s hp. 
+
+get updated HP of the character \begin{DoxyReturn}{Returns}
+the HP of the character 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a1687b635299e4274adaabe38fa613316}\label{class_player_a1687b635299e4274adaabe38fa613316}} 
+\index{Player@{Player}!getHpMax@{getHpMax}}
+\index{getHpMax@{getHpMax}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHpMax()}{getHpMax()}}
+{\footnotesize\ttfamily const int \& Player\+::get\+Hp\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get Max HP Method that gets the max hp of the player. 
+
+get maximum HP of the character \begin{DoxyReturn}{Returns}
+maximum HP of the character 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a49300f6f7d1083b3fddca1c270cce16b}\label{class_player_a49300f6f7d1083b3fddca1c270cce16b}} 
+\index{Player@{Player}!getPos@{getPos}}
+\index{getPos@{getPos}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily const sf\+::\+Vector2f \& Player\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_player}{Player}} Posititon Method that gets position of player. 
+
+get updated position of the character \begin{DoxyReturn}{Returns}
+the position of the character on the map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_acd9c2d46a734fee65d534307f3e0bd80}\label{class_player_acd9c2d46a734fee65d534307f3e0bd80}} 
+\index{Player@{Player}!loseHp@{loseHp}}
+\index{loseHp@{loseHp}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{loseHp()}{loseHp()}}
+{\footnotesize\ttfamily void Player\+::lose\+Hp (\begin{DoxyParamCaption}\item[{const int}]{value }\end{DoxyParamCaption})}
+
+
+
+Lose HP Method that handles the player losing hp. If damaged player loses hp and if hp goes into the negatives just set it to 0. 
+
+set the hp that the character lost 
+\begin{DoxyParams}{Parameters}
+{\em value} & -\/ hp of the character in integer\\
+\hline
+{\em Hp} & value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a94d4473f66712f82a5eda899429b49bc}\label{class_player_a94d4473f66712f82a5eda899429b49bc}} 
+\index{Player@{Player}!move@{move}}
+\index{move@{move}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Player\+::move (\begin{DoxyParamCaption}\item[{const float}]{dirX,  }\item[{const float}]{dirY }\end{DoxyParamCaption})}
+
+
+
+Sprtie Movement Method that moves the player sprite. 
+
+set the direction that character moves towards 
+\begin{DoxyParams}{Parameters}
+{\em dirX} & -\/ direction on x axis \\
+\hline
+{\em dirY} & -\/ direction on y axis\\
+\hline
+{\em float} & representing directions x and y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if can attack otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a04d2bfed2fa42488eea9ff0cd9818b2a}\label{class_player_a04d2bfed2fa42488eea9ff0cd9818b2a}} 
+\index{Player@{Player}!render@{render}}
+\index{render@{render}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Player\+::render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target }\end{DoxyParamCaption})}
+
+
+
+Render player Renders the player Sprite. 
+
+draw the player ~\newline
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em Target} & to render. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_aeac5ced0bb7ddf8c36f93ce357161119}\label{class_player_aeac5ced0bb7ddf8c36f93ce357161119}} 
+\index{Player@{Player}!setHp@{setHp}}
+\index{setHp@{setHp}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setHp()}{setHp()}}
+{\footnotesize\ttfamily void Player\+::set\+Hp (\begin{DoxyParamCaption}\item[{const int}]{hp }\end{DoxyParamCaption})}
+
+
+
+Set Hp Method that sets the player HP. 
+
+set the hp of the character 
+\begin{DoxyParams}{Parameters}
+{\em hp} & -\/ hp of the character in integer\\
+\hline
+{\em Hp} & value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a052d1f93ee6846291bed316d16e4ad84}\label{class_player_a052d1f93ee6846291bed316d16e4ad84}} 
+\index{Player@{Player}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Player\+::set\+Position (\begin{DoxyParamCaption}\item[{const float}]{x,  }\item[{const float}]{y }\end{DoxyParamCaption})}
+
+
+
+Set player Position Method that sets player position using x y values. 
+
+set the position of the character based on x and y axis 
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ position of character on x axis \\
+\hline
+{\em y} & -\/ position of character on y axis\\
+\hline
+{\em float} & representing directions x and y \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a8c957df2a6d645ebcc75fef1e0e3504a}\label{class_player_a8c957df2a6d645ebcc75fef1e0e3504a}} 
+\index{Player@{Player}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Player\+::set\+Position (\begin{DoxyParamCaption}\item[{const sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
+
+
+
+Set \mbox{\hyperlink{class_player}{Player}} Posititon Method that sets player position using vector. 
+
+set the position of the character
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & postion \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}\label{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}} 
+\index{Player@{Player}!update@{update}}
+\index{update@{update}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Player\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update methods Calls the update attack method. 
+
+call function \mbox{\hyperlink{class_player_aeb5a083f19a16e8fb89b7c869db0f72c}{update\+Attack()}} to update attack status ~\newline
+ \mbox{\Hypertarget{class_player_aeb5a083f19a16e8fb89b7c869db0f72c}\label{class_player_aeb5a083f19a16e8fb89b7c869db0f72c}} 
+\index{Player@{Player}!updateAttack@{updateAttack}}
+\index{updateAttack@{updateAttack}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{updateAttack()}{updateAttack()}}
+{\footnotesize\ttfamily void Player\+::update\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update Attack Info If the player attacks, update the attack cool down. 
+
+update attack status of the character 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Player.\+h\item 
+Player.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,150 @@
+\hypertarget{class_enemy}{}\doxysection{Enemy Class Reference}
+\label{class_enemy}\index{Enemy@{Enemy}}
+
+
+this file contains \mbox{\hyperlink{class_enemy}{Enemy}} class which defines how enemies act in the game and status of the enemy  
+
+
+
+
+{\ttfamily \#include $<$Enemy.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_enemy_af323e7f5d81e1384b9020681a535be4f}{Enemy}} (float pos\+\_\+x, float pos\+\_\+y)
+\begin{DoxyCompactList}\small\item\em The enemy class. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_enemy_ac0eec4755e28c02688065f9657150ac3}{$\sim$\+Enemy}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_enemy}{Enemy}} Destructor. \end{DoxyCompactList}\item 
+const sf\+::\+Float\+Rect \mbox{\hyperlink{class_enemy_a83901aa83d616646b8da48cf4787f070}{get\+Bounds}} () const
+\begin{DoxyCompactList}\small\item\em get boundary of where the enemy can go \end{DoxyCompactList}\item 
+const int \& \mbox{\hyperlink{class_enemy_a66a6917bbd189aecee906505cf9d9d32}{get\+Points}} () const
+\begin{DoxyCompactList}\small\item\em a getter function to return points enemy gives per kill \end{DoxyCompactList}\item 
+const int \& \mbox{\hyperlink{class_enemy_a99473261dd2ec3dbdab627046c326d3a}{get\+Damage}} () const
+\begin{DoxyCompactList}\small\item\em a getter function to return damage enemy can cause per kill \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_ad55ee71b5a8c23fbd00b3c368b90cc64}{update}} ()
+\begin{DoxyCompactList}\small\item\em updates enemy position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a0ecd38d13613eec89063155b71575463}{render}} (sf\+::\+Render\+Target $\ast$target)
+\begin{DoxyCompactList}\small\item\em draws the enemy sprite \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this file contains \mbox{\hyperlink{class_enemy}{Enemy}} class which defines how enemies act in the game and status of the enemy 
+
+\mbox{\hyperlink{class_enemy}{Enemy}} class
+
+this class includes functions that define boundaries which limit where the enemy can go, how much damage the enemy can make and the points a player can get from killing each enemy 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_enemy_af323e7f5d81e1384b9020681a535be4f}\label{class_enemy_af323e7f5d81e1384b9020681a535be4f}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{float}]{pos\+\_\+x,  }\item[{float}]{pos\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+The enemy class. 
+
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em pos\+\_\+x} & -\/ define enemy position on x axis \\
+\hline
+{\em pos\+\_\+y} & -\/ define enemy position on y axis\\
+\hline
+\end{DoxyParams}
+gets the stats of the enemies then creates of enemy, setting its position to pos\+\_\+x, pos\+\_\+y. \mbox{\Hypertarget{class_enemy_ac0eec4755e28c02688065f9657150ac3}\label{class_enemy_ac0eec4755e28c02688065f9657150ac3}} 
+\index{Enemy@{Enemy}!````~Enemy@{$\sim$Enemy}}
+\index{````~Enemy@{$\sim$Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{$\sim$Enemy()}{~Enemy()}}
+{\footnotesize\ttfamily Enemy\+::$\sim$\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_enemy}{Enemy}} Destructor. 
+
+deconstructor
+
+Default destructor for the \mbox{\hyperlink{class_enemy}{Enemy}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_a83901aa83d616646b8da48cf4787f070}\label{class_enemy_a83901aa83d616646b8da48cf4787f070}} 
+\index{Enemy@{Enemy}!getBounds@{getBounds}}
+\index{getBounds@{getBounds}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getBounds()}{getBounds()}}
+{\footnotesize\ttfamily const sf\+::\+Float\+Rect Enemy\+::get\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get boundary of where the enemy can go 
+
+gets bounds of enemies
+
+\begin{DoxyReturn}{Returns}
+the boundaries of the map
+\end{DoxyReturn}
+global bounds for enemy to make sure they dont go off map \mbox{\Hypertarget{class_enemy_a99473261dd2ec3dbdab627046c326d3a}\label{class_enemy_a99473261dd2ec3dbdab627046c326d3a}} 
+\index{Enemy@{Enemy}!getDamage@{getDamage}}
+\index{getDamage@{getDamage}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getDamage()}{getDamage()}}
+{\footnotesize\ttfamily const int \& Enemy\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+a getter function to return damage enemy can cause per kill 
+
+get damages taken from enemies
+
+\begin{DoxyReturn}{Returns}
+damage eney causes per kill
+\end{DoxyReturn}
+getter method for damage dealt per enemy \mbox{\Hypertarget{class_enemy_a66a6917bbd189aecee906505cf9d9d32}\label{class_enemy_a66a6917bbd189aecee906505cf9d9d32}} 
+\index{Enemy@{Enemy}!getPoints@{getPoints}}
+\index{getPoints@{getPoints}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getPoints()}{getPoints()}}
+{\footnotesize\ttfamily const int \& Enemy\+::get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+a getter function to return points enemy gives per kill 
+
+get points that enemy gives
+
+\begin{DoxyReturn}{Returns}
+points enemy gives per kill
+\end{DoxyReturn}
+getter method for points enemy gives per kill \mbox{\Hypertarget{class_enemy_a0ecd38d13613eec89063155b71575463}\label{class_enemy_a0ecd38d13613eec89063155b71575463}} 
+\index{Enemy@{Enemy}!render@{render}}
+\index{render@{render}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Enemy\+::render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target }\end{DoxyParamCaption})}
+
+
+
+draws the enemy sprite 
+
+renders the enemy sprite
+
+
+\begin{DoxyParams}{Parameters}
+{\em sf\+::\+Render\+Target$\ast$} & target -\/ define the target of the enemy\\
+\hline
+\end{DoxyParams}
+parameter 1 is a render\+Target variable. draws the enemy sprite \mbox{\Hypertarget{class_enemy_ad55ee71b5a8c23fbd00b3c368b90cc64}\label{class_enemy_ad55ee71b5a8c23fbd00b3c368b90cc64}} 
+\index{Enemy@{Enemy}!update@{update}}
+\index{update@{update}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Enemy\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+updates enemy position 
+
+update the status of the enemies
+
+updates enemy by moving sprite dependent on speed 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Enemy.\+h\item 
+Enemy.\+cpp\end{DoxyCompactItemize}

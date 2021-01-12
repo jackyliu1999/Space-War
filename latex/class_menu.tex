@@ -1,0 +1,98 @@
+\hypertarget{class_menu}{}\doxysection{Menu Class Reference}
+\label{class_menu}\index{Menu@{Menu}}
+
+
+this file contains \mbox{\hyperlink{class_menu}{Menu}} class which defines options of the menu  
+
+
+
+
+{\ttfamily \#include $<$Menu.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_menu_af1e9c25835286cf66c2c2809ceef9277}{Menu}} (sf\+::\+Render\+Window $\ast$window)
+\item 
+void \mbox{\hyperlink{class_menu_a4ef90951f733fb953a6cde28b984b26c}{display\+Main}} ()
+\item 
+void \mbox{\hyperlink{class_menu_ad4e07a141d38c529cfc64cd1f28d86b1}{display\+How\+To}} ()
+\item 
+void \mbox{\hyperlink{class_menu_abffb1ab238858197d6e458d780c704ce}{display\+Death}} ()
+\item 
+void \mbox{\hyperlink{class_menu_adb85dfc2599c03626bcfaceb71075e63}{display\+End}} ()
+\item 
+void \mbox{\hyperlink{class_menu_a3630ce145aab68961ec535762d928558}{clear}} ()
+\item 
+bool \mbox{\hyperlink{class_menu_a054e0aeda9d6109e5dea5b523dd0890c}{update}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this file contains \mbox{\hyperlink{class_menu}{Menu}} class which defines options of the menu 
+
+\mbox{\hyperlink{class_menu}{Menu}} class
+
+this class includes functions that define response to option including \char`\"{}\+Play\char`\"{}, \char`\"{}\+How To Play\char`\"{} and \char`\"{}\+Quit\char`\"{} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_menu_af1e9c25835286cf66c2c2809ceef9277}\label{class_menu_af1e9c25835286cf66c2c2809ceef9277}} 
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily Menu\+::\+Menu (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window }\end{DoxyParamCaption})}
+
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em window} & -\/ window of the game \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_menu_a3630ce145aab68961ec535762d928558}\label{class_menu_a3630ce145aab68961ec535762d928558}} 
+\index{Menu@{Menu}!clear@{clear}}
+\index{clear@{clear}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Menu\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+the function defines the option to quite the game \mbox{\Hypertarget{class_menu_abffb1ab238858197d6e458d780c704ce}\label{class_menu_abffb1ab238858197d6e458d780c704ce}} 
+\index{Menu@{Menu}!displayDeath@{displayDeath}}
+\index{displayDeath@{displayDeath}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{displayDeath()}{displayDeath()}}
+{\footnotesize\ttfamily void Menu\+::display\+Death (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+define the menu after the character is killed the function includes option to restart the game and end the game \mbox{\Hypertarget{class_menu_adb85dfc2599c03626bcfaceb71075e63}\label{class_menu_adb85dfc2599c03626bcfaceb71075e63}} 
+\index{Menu@{Menu}!displayEnd@{displayEnd}}
+\index{displayEnd@{displayEnd}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{displayEnd()}{displayEnd()}}
+{\footnotesize\ttfamily void Menu\+::display\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+define the menu after the player wins the game the function includes option to restart the game and end the game \mbox{\Hypertarget{class_menu_ad4e07a141d38c529cfc64cd1f28d86b1}\label{class_menu_ad4e07a141d38c529cfc64cd1f28d86b1}} 
+\index{Menu@{Menu}!displayHowTo@{displayHowTo}}
+\index{displayHowTo@{displayHowTo}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{displayHowTo()}{displayHowTo()}}
+{\footnotesize\ttfamily void Menu\+::display\+How\+To (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+define \char`\"{}\+How to Play\char`\"{} option explain how to control the game and how to end the game \mbox{\Hypertarget{class_menu_a4ef90951f733fb953a6cde28b984b26c}\label{class_menu_a4ef90951f733fb953a6cde28b984b26c}} 
+\index{Menu@{Menu}!displayMain@{displayMain}}
+\index{displayMain@{displayMain}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{displayMain()}{displayMain()}}
+{\footnotesize\ttfamily void Menu\+::display\+Main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+define G\+UI of main menu \mbox{\Hypertarget{class_menu_a054e0aeda9d6109e5dea5b523dd0890c}\label{class_menu_a054e0aeda9d6109e5dea5b523dd0890c}} 
+\index{Menu@{Menu}!update@{update}}
+\index{update@{update}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool Menu\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+the function defines reponse based on which option player choooses ~\newline
+ \begin{DoxyReturn}{Returns}
+True\+: if player clicks the mouse , False\+: if player does not clicks the mouse 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Menu.\+h\item 
+Menu.\+cpp\end{DoxyCompactItemize}

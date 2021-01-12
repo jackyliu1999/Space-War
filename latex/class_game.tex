@@ -1,0 +1,94 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+this file contains \mbox{\hyperlink{class_game}{Game}} class which incorporates \mbox{\hyperlink{class_player}{Player}}, \mbox{\hyperlink{class_weapon}{Weapon}} and \mbox{\hyperlink{class_enemy}{Enemy}} classes.  
+
+
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_ad1f0aa0742fbfe921b0d69ff42bb0173}{Game}} (sf\+::\+Render\+Window $\ast$window)
+\begin{DoxyCompactList}\small\item\em constructor that uses window property from S\+F\+ML framework \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game}} ()
+\begin{DoxyCompactList}\small\item\em deleting game data \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_a81ee4a2eb17a99a70b071ceb47542e0f}{update}} ()
+\begin{DoxyCompactList}\small\item\em Update This method is call every game loop. This method calls all other update method in this class to update everything. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this file contains \mbox{\hyperlink{class_game}{Game}} class which incorporates \mbox{\hyperlink{class_player}{Player}}, \mbox{\hyperlink{class_weapon}{Weapon}} and \mbox{\hyperlink{class_enemy}{Enemy}} classes. 
+
+\mbox{\hyperlink{class_game}{Game}} class
+
+this class includes functions which define sound the game plays when starting a game. Also, include several private functions that update G\+UI of the character, weapon and enemies 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_ad1f0aa0742fbfe921b0d69ff42bb0173}\label{class_game_ad1f0aa0742fbfe921b0d69ff42bb0173}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+constructor that uses window property from S\+F\+ML framework 
+
+game method
+
+
+\begin{DoxyParams}{Parameters}
+{\em sf\+::\+Render\+Window$\ast$} & window -\/ define window size of the game\\
+\hline
+\end{DoxyParams}
+makes the window, then loads the weapon textures, then loads the gui functions,then sets the background image then sets kill count = 0, then makes the player, then makes the player and finally spawns enemies 
+\begin{DoxyParams}{Parameters}
+{\em window} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_ae3d112ca6e0e55150d2fdbc704474530}\label{class_game_ae3d112ca6e0e55150d2fdbc704474530}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+deleting game data 
+
+deconstructor ~\newline
+
+
+deletes all data once game is over\+: textures, enemies 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_a81ee4a2eb17a99a70b071ceb47542e0f}\label{class_game_a81ee4a2eb17a99a70b071ceb47542e0f}} 
+\index{Game@{Game}!update@{update}}
+\index{update@{update}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily int Game\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update This method is call every game loop. This method calls all other update method in this class to update everything. 
+
+update the status of the game when the character is still alive ~\newline
+
+
+\begin{DoxyReturn}{Returns}
+-\/1 if the player died. 
+
+1 if the player wins. 
+
+0 if the player has not won or died. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game.\+h\item 
+Game.\+cpp\end{DoxyCompactItemize}

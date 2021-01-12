@@ -1,0 +1,118 @@
+\hypertarget{class_button}{}\doxysection{Button Class Reference}
+\label{class_button}\index{Button@{Button}}
+
+
+this file contains \mbox{\hyperlink{class_button}{Button}} class which defines outlook and properties of a button  
+
+
+
+
+{\ttfamily \#include $<$Button.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_button_a3b36df1ae23c58aedb9e15a713159459}{Button}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_button}{Button}} class Since S\+F\+ML does not have buttons, this class is just a text in the center of a shape that have an effect when click. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_button_a3698cdeef470a852e3340d6acc34f5aa}{Button}} (std\+::string text\+String, int height, int width, int x\+Position, int y\+Position)
+\begin{DoxyCompactList}\small\item\em constructor of \mbox{\hyperlink{class_button}{Button}} class \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_button_ae296b1a425020be678036b1798a877de}{draw}} (sf\+::\+Render\+Window $\ast$window)
+\begin{DoxyCompactList}\small\item\em Draw Draw the button based on dimension, postion, text given. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_button_aaf533b987624eda899b061096239b8d4}{is\+Mouse\+Clicked}} (sf\+::\+Render\+Window $\ast$window)
+\begin{DoxyCompactList}\small\item\em Is Mouse Clicked Check if user has clicked on this button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this file contains \mbox{\hyperlink{class_button}{Button}} class which defines outlook and properties of a button 
+
+\mbox{\hyperlink{class_button}{Button}} class
+
+this class includes functions that define G\+UI of the button and also checks whether user clicks the button 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_button_a3b36df1ae23c58aedb9e15a713159459}\label{class_button_a3b36df1ae23c58aedb9e15a713159459}} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_button}{Button}} class Since S\+F\+ML does not have buttons, this class is just a text in the center of a shape that have an effect when click. 
+
+\mbox{\hyperlink{class_button}{Button}} Default button class with empty param. \mbox{\Hypertarget{class_button_a3698cdeef470a852e3340d6acc34f5aa}\label{class_button_a3698cdeef470a852e3340d6acc34f5aa}} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}\item[{std\+::string}]{text\+String,  }\item[{int}]{height,  }\item[{int}]{width,  }\item[{int}]{x\+Position,  }\item[{int}]{y\+Position }\end{DoxyParamCaption})}
+
+
+
+constructor of \mbox{\hyperlink{class_button}{Button}} class 
+
+\mbox{\hyperlink{class_button}{Button}} \mbox{\hyperlink{class_button}{Button}} class with 5 param that initize the text, style and position of the button.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+String} & -\/ text shown on the button \\
+\hline
+{\em height} & -\/ height of the button \\
+\hline
+{\em width} & -\/ width of the button \\
+\hline
+{\em x\+Position} & -\/ position of the button on x axis \\
+\hline
+{\em y\+Position} & -\/ position of the button on y axis\\
+\hline
+{\em the} & text string in center of the button, dimension, and postion. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_button_ae296b1a425020be678036b1798a877de}\label{class_button_ae296b1a425020be678036b1798a877de}} 
+\index{Button@{Button}!draw@{draw}}
+\index{draw@{draw}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Button\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+Draw Draw the button based on dimension, postion, text given. 
+
+create window for the button 
+\begin{DoxyParams}{Parameters}
+{\em window} & -\/ size of the window\\
+\hline
+{\em the} & app window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_button_aaf533b987624eda899b061096239b8d4}\label{class_button_aaf533b987624eda899b061096239b8d4}} 
+\index{Button@{Button}!isMouseClicked@{isMouseClicked}}
+\index{isMouseClicked@{isMouseClicked}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{isMouseClicked()}{isMouseClicked()}}
+{\footnotesize\ttfamily bool Button\+::is\+Mouse\+Clicked (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+Is Mouse Clicked Check if user has clicked on this button. 
+
+check whether the player clicks the mouse 
+\begin{DoxyParams}{Parameters}
+{\em window} & -\/ window of the button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True\+: if the player clicks the mouse; Flase\+: if the player does not click the mouse
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em the} & app window \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Button.\+h\item 
+Button.\+cpp\end{DoxyCompactItemize}

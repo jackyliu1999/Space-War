@@ -1,0 +1,127 @@
+\hypertarget{class_weapon}{}\doxysection{Weapon Class Reference}
+\label{class_weapon}\index{Weapon@{Weapon}}
+
+
+this file contains \mbox{\hyperlink{class_weapon}{Weapon}} class which defines the position and status of the weapon ~\newline
+  
+
+
+
+
+{\ttfamily \#include $<$Weapon.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_weapon_a42dbc46dd70319a24763992c4ebbd396}\label{class_weapon_a42dbc46dd70319a24763992c4ebbd396}} 
+\mbox{\hyperlink{class_weapon_a42dbc46dd70319a24763992c4ebbd396}{Weapon}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_weapon}{Weapon}} default constructor Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_weapon_a72c03b6dfc2b5599d79e91ba0f10d0d3}{Weapon}} (sf\+::\+Texture $\ast$texture, float pos\+\_\+x, float pos\+\_\+y, float dir\+\_\+x, float dir\+\_\+y, float movement\+\_\+speed)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_weapon}{Weapon}} class constructor Gets the weapons\textquotesingle{}s texture, position, direction and movement Speed. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_weapon_a420e7ba3d2017e6de3e93eb579cfd3fa}{$\sim$\+Weapon}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_weapon}{Weapon}} destructor Default destructor for the \mbox{\hyperlink{class_weapon}{Weapon}}. \end{DoxyCompactList}\item 
+const sf\+::\+Float\+Rect \mbox{\hyperlink{class_weapon_a9753d2eae521c363ae68977b0aa48957}{get\+Bounds}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_weapon}{Weapon}} boundary Gives map boundary for the weapon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weapon_a1b3f76c5275b67f0bb8073157a27e736}{update}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_weapon}{Weapon}} movement Gives movement speed and direction for the weapon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weapon_a29a929cd495ebc49d5a14ef6ee3845b2}{render}} (sf\+::\+Render\+Target $\ast$target)
+\begin{DoxyCompactList}\small\item\em Draws the weapon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this file contains \mbox{\hyperlink{class_weapon}{Weapon}} class which defines the position and status of the weapon ~\newline
+ 
+
+\mbox{\hyperlink{class_weapon}{Weapon}} class
+
+this class includes functions that define the position and boundary of the weapon and also update the position of the weapon 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_weapon_a72c03b6dfc2b5599d79e91ba0f10d0d3}\label{class_weapon_a72c03b6dfc2b5599d79e91ba0f10d0d3}} 
+\index{Weapon@{Weapon}!Weapon@{Weapon}}
+\index{Weapon@{Weapon}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{Weapon()}{Weapon()}}
+{\footnotesize\ttfamily Weapon\+::\+Weapon (\begin{DoxyParamCaption}\item[{sf\+::\+Texture $\ast$}]{texture,  }\item[{float}]{pos\+\_\+x,  }\item[{float}]{pos\+\_\+y,  }\item[{float}]{dir\+\_\+x,  }\item[{float}]{dir\+\_\+y,  }\item[{float}]{movement\+\_\+speed }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_weapon}{Weapon}} class constructor Gets the weapons\textquotesingle{}s texture, position, direction and movement Speed. 
+
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em texture} & \\
+\hline
+{\em pos\+\_\+x} & -\/ position of the weapon on x axis \\
+\hline
+{\em pos\+\_\+y} & -\/ position of the weapon on y axis \\
+\hline
+{\em dir\+\_\+x} & -\/ direction of the weapon on x axis \\
+\hline
+{\em dir\+\_\+y} & -\/ direction of the weapon on y axis \\
+\hline
+{\em movement\+\_\+speed} & -\/ speed of weapon movement\\
+\hline
+{\em \mbox{\hyperlink{class_weapon}{Weapon}}} & texture, x and y position, x and y direction, movement speed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_weapon_a420e7ba3d2017e6de3e93eb579cfd3fa}\label{class_weapon_a420e7ba3d2017e6de3e93eb579cfd3fa}} 
+\index{Weapon@{Weapon}!````~Weapon@{$\sim$Weapon}}
+\index{````~Weapon@{$\sim$Weapon}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{$\sim$Weapon()}{~Weapon()}}
+{\footnotesize\ttfamily Weapon\+::$\sim$\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_weapon}{Weapon}} destructor Default destructor for the \mbox{\hyperlink{class_weapon}{Weapon}}. 
+
+deconstructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_weapon_a9753d2eae521c363ae68977b0aa48957}\label{class_weapon_a9753d2eae521c363ae68977b0aa48957}} 
+\index{Weapon@{Weapon}!getBounds@{getBounds}}
+\index{getBounds@{getBounds}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{getBounds()}{getBounds()}}
+{\footnotesize\ttfamily const sf\+::\+Float\+Rect Weapon\+::get\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\mbox{\hyperlink{class_weapon}{Weapon}} boundary Gives map boundary for the weapon. 
+
+get the boundary of the weapon on the map \begin{DoxyReturn}{Returns}
+the boudary on the map
+
+Boundary for weapon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_weapon_a29a929cd495ebc49d5a14ef6ee3845b2}\label{class_weapon_a29a929cd495ebc49d5a14ef6ee3845b2}} 
+\index{Weapon@{Weapon}!render@{render}}
+\index{render@{render}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Weapon\+::render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target }\end{DoxyParamCaption})}
+
+
+
+Draws the weapon. 
+
+define G\+UI when the character draws the weapon 
+\begin{DoxyParams}{Parameters}
+{\em target} & -\/ the target of the weapon\\
+\hline
+{\em Render} & target Render the weapon using target \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_weapon_a1b3f76c5275b67f0bb8073157a27e736}\label{class_weapon_a1b3f76c5275b67f0bb8073157a27e736}} 
+\index{Weapon@{Weapon}!update@{update}}
+\index{update@{update}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Weapon\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_weapon}{Weapon}} movement Gives movement speed and direction for the weapon. 
+
+update position of the weapon 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weapon.\+h\item 
+Weapon.\+cpp\end{DoxyCompactItemize}
