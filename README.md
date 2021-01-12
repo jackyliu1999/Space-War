@@ -1,4 +1,4 @@
-# Space War
+# Space War - CS3307 Group Project - Final Submission
 
 ## Overview
 
@@ -32,3 +32,14 @@ Space War is a 2D space shooter game created using C++ and SFML. The goal of thi
 Control buttons:
 
 - Use arrow keys to move
+
+# Development Team:
+Jacky Liu - https://github.com/jackyliu1999
+
+Ivan Zhang - https://github.com/CyaTmrw
+
+Danish Amrohi
+
+Jadd Miguel Arriola
+
+Zeyu Zhang
