@@ -2,5 +2,5 @@
 *.cpp linguist-detectable=true
 *.tex linguist-language=Solidity
 *.css linguist-detectable=false
-*.javascript linguist-detectable=false
+*.js linguist-detectable=false
 
