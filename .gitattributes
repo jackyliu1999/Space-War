@@ -2,3 +2,4 @@
 *.cpp linguist-detectable=true
 *.css linguist-detectable=false
 *.js            text
+*.tex            text
