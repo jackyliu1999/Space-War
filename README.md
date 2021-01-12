@@ -2,7 +2,7 @@
 
 ## Overview
 
-Space War is a 2D space shooter game created using C++ and SFML. The goal of this game is for the player to defeating enough enemies and getting the highest points as possible.
+Space War is a 2D space shooter game created developed in C++ using the SFML library. The goal of this game is for the player to defeating enough enemies to advance stages.
 
 ## Prerequisites
 
